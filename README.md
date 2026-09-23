@@ -6,12 +6,12 @@ Interactive Christmas map created for Toerisme Oudenaarde
 
 https://oudenaarde-kerst.netlify.app/
 
-##Main files
+##Main files 
 
--index.html - map structure, markers, positions and popup texts
--style.css - visual styling and object sizes
--script.js - zooming, panning, and popup behaviour
--images? - map, objects, and marker illustrations
+-index.html - map structure, markers, positions, popup texts and visual-effect classes
+-style.css - visual styling, object sizes, marker glow effects and decorative snow animation
+-script.js - zooming, panning, and popup positioning and popup behavior
+-images/ - map, objects, and marker illustrations
 
 ## Editing text
 
@@ -40,6 +40,19 @@ Decorative object sizes use:
 Marker sizes use:
 
 --marker-width:...%;
+
+## Visual effects
+
+### Marker glow
+
+Clickable markers have a soft silver glow by default.
+
+Selected markers can use a stronger animated golden glow.
+To apply it, add the `golden-glow` class to the marker in `index.html`:
+
+```html
+class="marker ijsbaan-marker gold-glow"
+
 
 ## Replacing images
 
