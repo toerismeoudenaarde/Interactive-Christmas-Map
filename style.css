@@ -589,6 +589,42 @@ top: 30%;
     border-radius: 4px;
 }
 
+/*--------------*/
+/*GOLDEN CHRISTMAS GLOW*/
+/*--------------*/
+
+.marker.gold-glow.img{
+    animation: goldenChristmasGlow 1.2s ease-in-out
+    infinite;
+}
+
+/*Slow soft golden shimmer*/
+
+@keyframes goldenChristmasGlow{
+
+    0%,
+    100%{
+        filter:
+          brightness(8.22)
+          saturate(1.15)
+          drop-shadow(0 0 2px rgba(255, 255, 220, 1))
+          drop-shadow(0 0 5px rgba(255, 225, 80, 0.95))
+          drop-shadow(0 0 10px rgba(255, 180, 25, 0.75))
+          drop-shadow(0 0 18px rgba(255, 135 0, 0.45));
+    }
+
+    50%{
+        filter:
+        brightness(8.42)
+        saturate(1.35)
+        drop-shadow(0 0 3px rgba(255, 255, 235, 1))
+        drop-shadow(0 0 7px rgba(255, 235, 90, 1))
+        drop-shadow(0 0 13px rgba(255, 185, 20, 0.95))
+        drop-shadow(0 0 22px rgba(225, 176, 120, 0.7))
+        drop-shadow(0 0 32px rgba(240, 146, 78, 0.496));
+    }
+}
+
 
 
 
