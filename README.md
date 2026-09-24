@@ -124,6 +124,38 @@ popup, behavior, zooming or panning.
 
 The snow layers use `pointer-events:none`, so they do not block clickable markers. 
 
+## Embedding the map
+
+The live interactive map can be embedded into another website using an iframe:
+
+(html):
+
+<div 
+style="
+width: 100%;
+height: clamp(520px, 78vh, 900px);
+overflow: hidden;
+"
+>
+
+<iframe
+src="https://oudenaarde-kerst.netlify.app/"
+title="Interactive Christmas Map Oudenaarde"
+loading="lazy"
+allowfullscreen
+style="
+width: 100%;
+height: 100%;
+border: 0;
+display: block;
+"
+></iframe>
+</div>
+
+The map remains hosted through Netlify. Updates deployed to the live Netlify version will 
+automatically appear inside the embedded iframe
+
+
 ## Author 
 
 Created by Julie Sinclair for Toerisme Oudenaarde, 2026
